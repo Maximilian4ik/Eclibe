@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECLIBE</title>
+    <link rel="stylesheet" href="css/minireset.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="popup_wrapper" style="display: none">
+      <div class="hidden" id="hidden">
+        <div class="hidden_content">
+          <p>Данный раздел находиться в разработке</p>
+          <p>Для получения информации по услуге, свяжитесь с нами!</p>
+          <a href="contacts.html">Перейти на страницу "Контакты"</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="call_popup_wrapper" style="display: none">
+      <div class="call_popup" id="call_popup">
+        <div class="call_popup_content">
+          <p class="call_popup_text">
+            Для того, чтобы <br />
+            <b>Заказать обратный звонок</b> <br />
+            Заполните форму ниже
+          </p>
+          <form action="#" class="call_popup_form">
+            <input type="text" placeholder="Ваше имя ..." />
+            <input type="tel" placeholder="Ваш телефон ..." />
+            <input type="email" placeholder="Ваш e-mail ..." />
+            <a href="#" class="popup_button_call button">Заказать звонок</a>
+          </form>
+          <p class="call_privacy-policy">
+            Нажимая на кнопку «Заказать звонок», Вы соглашаетесь <br />
+            с условиями <a href="#">политики конфиденциальности</a> Ваших данных
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header_decor"></div>
+        <div class="header_1">
+          <div class="logo">
+            <h3 class="">ECLIBE</h3>
+            <p>Студия интернет-маркетинга</p>
+          </div>
+          <div class="header_items">
+            <div class="location header_item">
+              <img src="img/location.svg" alt="" />
+              <p>Красноярск</p>
+            </div>
+
+            <div class="email header_item">
+              <img src="img/email.svg" alt="" />
+              <p><a href="mailto:info@eclibe.com">info@eclibe.com </a></p>
+            </div>
+
+            <div class="phone header_item">
+              <a class="tg" href="">
+                <img src="img/telegram.svg" alt="" />
+              </a>
+              <a class="whatsapp" href="">
+                <img src="img/whatsapp.svg" alt="" />
+              </a>
+              <img src="img/phone.svg" alt="" />
+              <p><a href="tel:+79029790990">+7 902 979 09 90</a></p>
+            </div>
+            <a
+              class="header_button button popup-btn call_button"
+              href="#call_popup"
+            >
+              Заказать звонок
+            </a>
+          </div>
+
+          <a class="burger_menu">
+            <span class=""></span>
+          </a>
+        </div>
+        <div class="header_menu">
+          <nav class="nav">
+            <ul class="menu_list" id="menu_list">
+              <li class="menu_item">
+                <a class="menu_link menu_item_active" id="main" href="#offer">
+                  Главная
+                </a>
+              </li>
+              <li class="menu_item">
+                <a
+                  class="menu_link"
+                  id="create_website"
+                  href="create_site.html"
+                >
+                  Создание сайта
+                </a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link " id="promotion" href="#create">
+                  Продвижение сайта
+                </a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link" id="create_logo" href="#">Создание лого</a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link" id="email_list" href="portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu_item">
+                <a class="menu_link" id="contacts" href="#footer">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile_menu">
+          <!-- <a class="burger_menu">
+            <span class=""></span>
+          </a> -->
+          <a class="close">
+            <span></span>
+          </a>
+          <h3>Навигация по сайту</h3>
+          <nav class="mob_nav">
+            <ul class="mob_list">
+              <li class="menu_item mob_menu_item">
+                <a class="menu_link" href="#offer">Главная</a>
+              </li>
+              <li class="menu_item mob_menu_item">
+                <a class="menu_link" href="#">Создание сайта</a>
+              </li>
+              <li class="menu_item mob_menu_item">
+                <a class="menu_link" href="#create">Продвижение сайта</a>
+              </li>
+              <li class="menu_item mob_menu_item">
+                <a class="menu_link" href="#">Создание лого</a>
+              </li>
+              <li class="menu_item mob_menu_item">
+                <a class="menu_link" href="portfolio.html">Портфолио</a>
+              </li>
+              <li class="menu_item mob_menu_item">
+                <a class="menu_link" href="#footer">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <div class="phone mob_phone">
+              <a class="tg" href="">
+                <img src="img/telegram.svg" alt="" />
+              </a>
+              <a class="whatsapp" href="">
+                <img src="img/whatsapp.svg" alt="" />
+              </a>
+              <img src="img/phone.svg" alt="" />
+              <p><a href="">+7 902 979 09 90</a></p>
+            </div>
+
+            <div class="email mob_email">
+              <img src="img/email.svg" alt="" />
+              <p><a href="mailto:ainfo@eclibe.com">ainfo@eclibe.com</a></p>
+            </div>
+
+            <a
+              class="mob_button button popup-btn call_button"
+              href="#call_popup"
+            >
+              Заказать звонок
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="offer">
+        <div class="container">
+          <div class="offer_content wow fadeIn" id="offer">
+            <div class="decor_h decore_h1">&lt;h1&gt;</div>
+            <div class="offer_info">
+              <h1 class="offer_title">Веб студия ECLIBE в Красноярске</h1>
+              <p class="offer_text">
+                Создание сайтов под ключ – это одна из самых необходимых услуг
+                для каждого бизнеса. Вне зависимости от того, насколько
+                масштабна Ваша компания, выход на онлайн продажи позволит
+                многократно увеличить свои показатели продаж и расширить базу
+                клиентов.
+              </p>
+              <a class="button offer_button popup-btn" href="#hidden">
+                Оставить заявку
+              </a>
+            </div>
+            <div class="offer_img">
+              <div class="rectangle_decor"></div>
+              <div class="decor_1"></div>
+              <div class="decor_2"></div>
+              <div class="decor_3"></div>
+              <img class="main_img" src="img/main_img.jpg" alt="" />
+            </div>
+          </div>
+          <div class="scroll_down" id="scroll_down">
+            <a class="scroll_down_mouse" href="#services"
+              ><img src="img/Mask_group.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <div class="services_content">
+            <div class="decor_h services_decore">&lt;h2&gt;</div>
+            <!-- <div class="service_decor">&lt;/&gt;</div> -->
+            <div class="service_decor_2"></div>
+            <h2 class="services_title section_title">Мы предлагаем</h2>
+            <div class="secvices_cards">
+              <div class="secvices_card wow slideInLeft">
+                <div class="card_header">
+                  <div class="card_title">
+                    <img src="img/cards_img/img_1.svg" alt="" />
+                    <h3>Создание сайтов</h3>
+                  </div>
+                  <ul class="card_list">
+                    <li>Корпоративные сайты</li>
+                    <li>Landing page</li>
+                    <li>Интернет магазин</li>
+                    <li>Шаблоные сайты</li>
+                  </ul>
+                </div>
+                <div class="card_footer">
+                  <a class="button card_btn blue_btn popup-btn" href="#hidden">
+                    Перейти в раздел
+                  </a>
+                  <a class="button card_btn popup-btn" href="#hidden">
+                    Нужна помощь
+                  </a>
+                </div>
+              </div>
+              <div class="secvices_card wow pulse">
+                <div class="card_header"></div>
+                <div class="card_footer"></div>
+                <div class="card_title">
+                  <img src="img/cards_img/img_2.svg" alt="" />
+                  <h3>Продвижение</h3>
+                </div>
+                <ul class="card_list">
+                  <li>SEO</li>
+                  <li>Яндекс.Директ</li>
+                  <li>Вконтакте</li>
+                  <li>Одноклассники</li>
+                </ul>
+                <a class="button card_btn blue_btn popup-btn" href="#hidden">
+                  Перейти в раздел
+                </a>
+                <a class="button card_btn popup-btn" href="#hidden">
+                  Нужна помощь
+                </a>
+              </div>
+              <div class="secvices_card wow slideInRight">
+                <div class="card_header">
+                  <div class="card_title">
+                    <img src="img/cards_img/img_3.svg" alt="" />
+                    <h3>Фирменный стиль</h3>
+                  </div>
+                  <ul class="card_list">
+                    <li>Логотип</li>
+                    <li>Брендбук</li>
+                    <li>Маркетинг-кит</li>
+                  </ul>
+                </div>
+                <div class="card_footer">
+                  <a class="button card_btn blue_btn popup-btn" href="#hidden">
+                    Перейти в раздел
+                  </a>
+                  <a class="button card_btn popup-btn" href="#hidden">
+                    Нужна помощь
+                  </a>
+                </div>
+              </div>
+              <div class="secvices_card wow slideInLeft">
+                <div class="card_header"></div>
+                <div class="card_footer"></div>
+                <div class="card_title">
+                  <img src="img/cards_img/img_4.svg" alt="" />
+                  <h3>Создание сайтов</h3>
+                </div>
+                <ul class="card_list">
+                  <li>Корпоративные сайты</li>
+                  <li>Landing page</li>
+                  <li>Интернет магазин</li>
+                  <li>Шаблоные сайты</li>
+                </ul>
+                <a class="button card_btn blue_btn popup-btn" href="#hidden">
+                  Перейти в раздел
+                </a>
+                <a class="button card_btn popup-btn" href="#hidden">
+                  Нужна помощь
+                </a>
+              </div>
+              <div class="secvices_card wow pulse">
+                <div class="card_header">
+                  <div class="card_title">
+                    <img src="img/cards_img/img_5.svg" alt="" />
+                    <h3>Создание сайтов</h3>
+                  </div>
+                  <ul class="card_list">
+                    <li>По городам</li>
+                    <li>По рубрикам</li>
+                    <li>По всей РФ</li>
+                  </ul>
+                </div>
+
+                <div class="card_footer">
+                  <a class="button card_btn blue_btn popup-btn" href="#hidden">
+                    Перейти в раздел
+                  </a>
+                  <a class="button card_btn popup-btn" href="#hidden">
+                    Нужна помощь
+                  </a>
+                </div>
+              </div>
+              <div class="secvices_card wow slideInRight">
+                <div class="card_header">
+                  <div class="card_title">
+                    <img src="img/cards_img/img_6.svg" alt="" />
+                    <h3>Создание сайтов</h3>
+                  </div>
+                  <ul class="card_list">
+                    <li>Интеграция с сайтом</li>
+                    <li>Интеграция с почтой</li>
+                    <li>Интеграция с телефонией</li>
+                  </ul>
+                </div>
+                <div class="card_footer">
+                  <a class="button card_btn blue_btn popup-btn" href="#hidden">
+                    Перейти в раздел
+                  </a>
+                  <a class="button card_btn popup-btn" href="#hidden">
+                    Нужна помощь
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="create">
+        <div class="container">
+          <div class="create_contant" id="create">
+            <div class="decor_h create_decor_h">&lt;h2&gt;</div>
+            <div class="create_decore_1"></div>
+            <div class="create_decor_2">
+              <img src="img/create_decore_2.svg" alt="" />
+            </div>
+            <h2 class="create_title section_title">
+              Разработка и продвижение сайтов
+            </h2>
+            <div class="create_info">
+              <p class="create_info-item wow slideInDown">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                текстов на латинице с начала XVI века. В то время некий
+                безымянный печатник создал большую коллекцию размеров и форм
+                шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem
+                Ipsum не только успешно пережил без заметных изменений пять
+                веков, но и перешагнул в электронный дизайн. Его популяризации в
+                новое время послужили публикация листов Letraset с образцами
+                Lorem Ipsum в 60-х годах и, в более недавнее время, программы
+                электронной вёрстки типа Aldus PageMaker, в шаблонах которых
+                используется Lorem Ipsum.
+              </p>
+              <img
+                class="create_info-item wow slideInDown"
+                src="img/create_img.jpg"
+                alt=""
+              />
+              <p class="create_info-item wow slideInLeft">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                текстов на латинице с начала XVI века. В то время некий
+                безымянный печатник создал большую коллекцию размеров и форм
+                шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem
+                Ipsum не только успешно пережил без заметных изменений пять
+                веков, но и перешагнул в электронный дизайн. Его популяризации в
+                новое время послужили публикация листов Letraset с образцами
+                Lorem Ipsum в 60-х годах и, в более недавнее время, программы
+                электронной вёрстки типа Aldus PageMaker, в шаблонах которых
+                используется Lorem Ipsum.
+              </p>
+              <p class="create_info-item wow slideInRight">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                текстов на латинице с начала XVI века. В то время некий
+                безымянный печатник создал большую коллекцию размеров и форм
+                шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem
+                Ipsum не только успешно пережил без заметных изменений пять
+                веков, но и перешагнул в электронный дизайн. Его популяризации в
+                новое время послужили публикация листов Letraset с образцами
+                Lorem Ipsum в 60-х годах и, в более недавнее время, программы
+                электронной вёрстки типа Aldus PageMaker, в шаблонах которых
+                используется Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <div class="container">
+          <div class="portfolio_content">
+            <div class="decor_h portfolio_decor">&lt;h2&gt;</div>
+            <h2 class="portfolio_title section_title">Наши последние работы</h2>
+            <div class="portfolio_cards">
+              <div class="portfolio_card wow bounceIn">
+                <img
+                  class="portfolio_card_img"
+                  src="img/portfolio.png"
+                  alt=""
+                />
+                <div class="portfolio_card_content">
+                  <p class="portfolio_card_title">
+                    <b>Сфера:</b> Ремонт и продажа лодок
+                  </p>
+                  <img
+                    class="portfolio_card_img portfolio_card_img_hidden"
+                    src="img/portfolio.png"
+                    alt=""
+                  />
+                  <p class="portfolio_card_text">
+                    <b>Задача:</b> <br />
+                    Необходимо создать корпоративный сайт, который должен
+                    содержать страницы лендинга для услуг и интернет магазин для
+                    продажи лодок, запчастей и других товаров. Дизайн должен
+                    должен отображать морскую стилистику, быть лаконичным и
+                    простым в использовании.
+                  </p>
+                  <a class="portfolio_btn button popup-btn" href="#hidden">
+                    Перейти к работе
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio_card wow bounceIn">
+                <img
+                  class="portfolio_card_img"
+                  src="img/portfolio.png"
+                  alt=""
+                />
+                <div class="portfolio_card_content">
+                  <p class="portfolio_card_title">
+                    <b>Сфера:</b> Ремонт и продажа лодок
+                  </p>
+                  <img
+                    class="portfolio_card_img portfolio_card_img_hidden"
+                    src="img/portfolio.png"
+                    alt=""
+                  />
+                  <p class="portfolio_card_text">
+                    <b>Задача:</b> <br />
+                    Необходимо создать корпоративный сайт, который должен
+                    содержать страницы лендинга для услуг и интернет магазин для
+                    продажи лодок, запчастей и других товаров. Дизайн должен
+                    должен отображать морскую стилистику, быть лаконичным и
+                    простым в использовании.
+                  </p>
+                  <a class="portfolio_btn button popup-btn" href="#hidden">
+                    Перейти к работе
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio_card portfolio_card_hidden">
+                <img
+                  class="portfolio_card_img"
+                  src="img/portfolio.png"
+                  alt=""
+                />
+                <div class="portfolio_card_content">
+                  <p class="portfolio_card_title">
+                    <b>Сфера:</b> Ремонт и продажа лодок
+                  </p>
+                  <img
+                    class="portfolio_card_img portfolio_card_img_hidden"
+                    src="img/portfolio.png"
+                    alt=""
+                  />
+                  <p class="portfolio_card_text">
+                    <b>Задача:</b> <br />
+                    Необходимо создать корпоративный сайт, который должен
+                    содержать страницы лендинга для услуг и интернет магазин для
+                    продажи лодок, запчастей и других товаров. Дизайн должен
+                    должен отображать морскую стилистику, быть лаконичным и
+                    простым в использовании.
+                  </p>
+                  <a class="portfolio_btn button popup-btn" href="#hidden">
+                    Перейти к работе
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button class="button view_all-btn" id="showDiv">
+              Смотреть все работы
+            </button>
+            <button
+              style="display: none"
+              class="button view_all-btn"
+              id="dontshowDiv"
+            >
+              Скрыть
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews_content">
+            <div class="decor_h reviews_decor_h">&lt;h2&gt;</div>
+            <div class="reviews_decor"></div>
+            <h2 class="reviews_title section_title">Отзывы о веб студии</h2>
+            <div class="slider swiper">
+              <div class="slider_items swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slider_item">
+                    <a class="test-popup-link" href="img/slider_item.jpg">
+                      <img
+                        class="slider_img wow bounceIn"
+                        src="img/slider_item.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider_item">
+                    <a class="test-popup-link" href="img/slider_item.jpg">
+                      <img
+                        class="slider_img wow bounceIn"
+                        src="img/slider_item.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider_item">
+                    <a class="test-popup-link" href="img/slider_item.jpg">
+                      <img
+                        class="slider_img wow bounceIn"
+                        src="img/slider_item.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider_item">
+                    <a class="test-popup-link" href="img/slider_item.jpg">
+                      <img
+                        class="slider_img wow bounceIn"
+                        src="img/slider_item.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider_item">
+                    <a class="test-popup-link" href="img/slider_item.jpg">
+                      <img
+                        class="slider_img wow bounceIn"
+                        src="img/slider_item.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_content" id="footer">
+          <div class="decor_h footer_decor">&lt;h2&gt;</div>
+          <h2 class="section_title footer_title">Контакты ECLIBE.com</h2>
+          <div class="footer_info">
+            <div class="footer_items">
+              <div class="footer_item">
+                <div class="phone">
+                  <img src="img/phone.svg" alt="" />
+                  <h4 class="h4">Телефон:</h4>
+                </div>
+                <p class="number">
+                  <a href="tel:+79029790990">+7 902 979 09 90</a>
+                </p>
+                <div class="messengers">
+                  <p>Доступен для:</p>
+                  <a class="footer_tg" href=""
+                    ><img src="img/telegram.svg" alt=""
+                  /></a>
+                  <a class="footer_whatsapp" href=""
+                    ><img src="img/whatsapp.svg" alt=""
+                  /></a>
+                </div>
+                <h4 class="h4 foot_email">Электронная почта:</h4>
+                <div class="email_addres">
+                  <img src="img/email.svg" alt="" />
+                  <p><a href="mailto:info@eclibe.com">info@eclibe.com</a></p>
+                </div>
+                <h4 class="h4 help">Нужна помощь?</h4>
+                <a
+                  class="button footer_btn header_button popup-btn call_button"
+                  href="#call_popup"
+                >
+                  Заказать звонок
+                </a>
+                <div class="privacy_policy">
+                  <img src="img/doc.svg" alt="" />
+                  <div class="pp_links">
+                    <a href="#">Политика конфиденциальности</a><br />
+                    <a href="#">Пользовательское соглашение</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer_item">
+                <ul>
+                  <li><h5>Навигация</h5></li>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Наши работы</a></li>
+                  <li><a href="#">Вакансии</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Карта сайта</a></li>
+                </ul>
+              </div>
+
+              <div class="footer_item">
+                <ul>
+                  <li>
+                    <a href="#"><h5>Разработка</h5></a>
+                  </li>
+                  <li><a href="#">Создание сайта визитки</a></li>
+                  <li><a href="#">Создание продающего сайта</a></li>
+                  <li><a href="#">Создание корпоративного сайта</a></li>
+                  <li><a href="#">Создание интернет-магазина</a></li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <a href="#"><h5 class="h5_bottom">Продвижение</h5></a>
+                  </li>
+                  <li><a href="#">Продвижение в Яндекс и Google</a></li>
+                  <li><a href="#">Продвижение в Instagram и Facebook</a></li>
+                  <li><a href="#">Продвижение в VK</a></li>
+                  <li><a href="#">Продвижение в ОК</a></li>
+                </ul>
+              </div>
+              <div class="footer_item">
+                <ul>
+                  <li>
+                    <a href="#"><h5>Дизайн</h5></a>
+                  </li>
+                  <li><a href="#">Создание логотипа</a></li>
+                  <li><a href="#">Создание фирменного стиля</a></li>
+                  <li><a href="#">Создание брендбука</a></li>
+                  <li><a href="#">Создание дизайна для типографии</a></li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href=""><h5 class="h5_bottom">Рассылки</h5></a>
+                  </li>
+                  <li><a href="">Email рассылка</a></li>
+                  <li><a href="">SMS рассылка</a></li>
+                  <li><a href="">Рассылка в Whatsapp / Viber / Telegram</a></li>
+                </ul>
+              </div>
+              <div class="privacy_policy privacy_policy_bottom">
+                <img src="img/doc.svg" alt="" />
+                <div class="pp_links">
+                  <a href="#">Политика конфиденциальности</a><br />
+                  <a href="#">Пользовательское соглашение</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
